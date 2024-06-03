@@ -1,0 +1,8 @@
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# Workout routes
+GET        /                         controllers.WorkoutController.index()
+POST       /logWorkout               controllers.WorkoutController.logWorkout
+GET        /workouts/:userId         controllers.WorkoutController.listWorkouts(userId: Long)
+GET        /allWorkouts              controllers.WorkoutController.listAllWorkouts

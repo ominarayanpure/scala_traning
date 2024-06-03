@@ -1,0 +1,33 @@
+@(reports: Seq[models.Report])
+
+@import helper._
+
+@main("Reports Table") {
+    <div class="container">
+        <h1>Reports Table</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Exercise Type</th>
+                    <th>Duration (mins)</th>
+                    <th>Calories Burned</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(report <- reports) {
+                <tr>
+                    <td>@report.id.getOrElse("")</td>
+                    <td>@report.user_id</td>
+                    <td>@report.exercise_type</td>
+                    <td>@report.duration</td>
+                    <td>@report.calories_burned</td>
+                    <td>@report.date</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
