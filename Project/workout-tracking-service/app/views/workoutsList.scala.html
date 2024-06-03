@@ -1,0 +1,29 @@
+@(workouts: Seq[models.Workout])(implicit request: RequestHeader)
+
+@main("Workouts List") {
+    <h2>Workouts</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User ID</th>
+                <th>Exercise</th>
+                <th>Duration</th>
+                <th>Calories Burned</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for(workout <- workouts) {
+            <tr>
+                <td>@workout.id.getOrElse("")</td>
+                <td>@workout.userId</td>
+                <td>@workout.exercise</td>
+                <td>@workout.duration</td>
+                <td>@workout.caloriesBurned</td>
+                <td>@workout.date</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
