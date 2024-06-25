@@ -1,0 +1,76 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:1:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{DataFrame, SparkSession}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:5:14: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  val spark: SparkSession = createSparkSession()[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:27:29: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  def createSparkSession(): SparkSession = {[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:42:51: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def readCSV(spark: SparkSession, path: String): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:42:22: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  def readCSV(spark: SparkSession, path: String): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:49:50: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def renameProductColumns(products: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:49:38: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def renameProductColumns(products: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:53:52: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def renameCustomerColumns(customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:53:40: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def renameCustomerColumns(customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:58:69: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithProducts(sales: DataFrame, products: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:58:36: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithProducts(sales: DataFrame, products: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:58:57: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithProducts(sales: DataFrame, products: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:62:83: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithCustomers(salesWithProducts: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:62:49: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithCustomers(salesWithProducts: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:62:71: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def joinSalesWithCustomers(salesWithProducts: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:66:106: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def calculateSalesAmount(transactionsWithNames: DataFrame, products: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:66:51: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def calculateSalesAmount(transactionsWithNames: DataFrame, products: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:66:72: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def calculateSalesAmount(transactionsWithNames: DataFrame, products: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:66:94: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def calculateSalesAmount(transactionsWithNames: DataFrame, products: DataFrame, customers: DataFrame): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:76:28: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def writeToCassandra(df: DataFrame, table: String, keyspace: String): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/RefactoredCode.scala:28:5: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    SparkSession.builder[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/WriteToKeyspaces.scala:1:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/WriteToKeyspaces.scala:5:15: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  val spark = SparkSession.builder[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/WriteToKeyspaces.scala:29:3: not found: value salesAmountDF[0m
+[0m[[0m[31merror[0m] [0m[0m  salesAmountDF.show()[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/purvigupta/Desktop/apple-scala-training/Day17Task/src/main/scala/WriteToKeyspaces.scala:31:3: not found: value salesAmountDF[0m
+[0m[[0m[31merror[0m] [0m[0m  salesAmountDF.write[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m25 errors found[0m
