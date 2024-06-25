@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package omkar;
+
+message ServerMetric {
+  string metricName = 1;
+  double value = 2;
+  string timestamp = 3;
+  string host = 4;
+  string region = 5;
+}
